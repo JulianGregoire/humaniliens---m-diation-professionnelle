@@ -30,7 +30,7 @@ export const Contact = () => {
                                 </div>
                                 <div>
                                     <h3 className="font-semibold text-lg">Email</h3>
-                                    <p className="text-blue-200">contact@humaniliens.fr</p>
+                                    <p className="text-blue-200">masfon@gmx.fr</p>
                                     <p className="text-xs text-blue-400 mt-1">Réponse sous 24h</p>
                                 </div>
                             </div>
@@ -41,7 +41,7 @@ export const Contact = () => {
                                 </div>
                                 <div>
                                     <h3 className="font-semibold text-lg">Téléphone</h3>
-                                    <p className="text-blue-200">06 00 00 00 00</p>
+                                    <p className="text-blue-200">0662327638</p>
                                     <p className="text-xs text-blue-400 mt-1">Du Lundi au Vendredi, 9h-18h</p>
                                 </div>
                             </div>
