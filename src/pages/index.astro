@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Services from '../components/Services.astro';
+import About from '../components/About.astro';
+import CaseStudies from '../components/CaseStudies.astro';
+import { GoogleReviews } from '../components/GoogleReviews.tsx';
+import BlogSection from '../components/BlogSection.astro';
+import { FAQ } from '../components/FAQ.tsx';
+import { Contact } from '../components/Contact.tsx';
+---
+
+<Layout title="HumaniLiens - Médiation Professionnelle">
+  <main>
+    <Hero />
+    <Services />
+    <About />
+    <CaseStudies />
+    <GoogleReviews client:visible />
+    <BlogSection />
+    <FAQ client:visible />
+    <Contact client:visible />
+  </main>
+</Layout>

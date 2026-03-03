@@ -1,0 +1,69 @@
+---
+import { ArrowRight, Calendar } from 'lucide-react';
+import { BLOG_POSTS } from '../constants.ts';
+---
+
+<section id="blog" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Actualités & Conseils</h2>
+        <p class="text-slate-600">
+          Retrouvez mes derniers articles sur la médiation, la gestion de crise et le climat social en entreprise.
+        </p>
+      </div>
+      <a 
+        href="/blog"
+        class="inline-flex items-center text-blue-700 font-bold hover:text-blue-800 transition-colors group"
+      >
+        Voir tout le blog
+        <ArrowRight class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+      </a>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      {BLOG_POSTS.slice(0, 3).map((post) => (
+        <a 
+          href={`/blog/${post.id}`} 
+          class="group cursor-pointer"
+        >
+          <article>
+            <div class="relative aspect-[16/10] rounded-2xl overflow-hidden mb-6">
+              <img 
+                src={post.image} 
+                alt={post.title} 
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                referrerPolicy="no-referrer"
+                loading="lazy"
+              />
+              <div class="absolute top-4 left-4">
+                <span class="px-3 py-1 bg-white/90 backdrop-blur-sm text-blue-800 text-xs font-bold rounded-full shadow-sm">
+                  {post.category}
+                </span>
+              </div>
+            </div>
+            
+            <div class="space-y-3">
+              <div class="flex items-center text-slate-400 text-sm gap-2">
+                <Calendar size={14} />
+                <span>{post.date}</span>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 group-hover:text-blue-700 transition-colors leading-tight">
+                {post.title}
+              </h3>
+              <p class="text-slate-600 text-sm line-clamp-2">
+                {post.excerpt}
+              </p>
+              <div class="pt-2">
+                <span class="text-blue-700 font-semibold text-sm inline-flex items-center">
+                  Lire l'article
+                  <ArrowRight class="ml-1 w-4 h-4" />
+                </span>
+              </div>
+            </div>
+          </article>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

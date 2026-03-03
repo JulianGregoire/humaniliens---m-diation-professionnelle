@@ -1,0 +1,61 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { Calendar, ArrowLeft } from 'lucide-react';
+import { BLOG_POSTS } from '../../constants.ts';
+---
+
+<Layout title="Blog | HumaniLiens - Médiation Professionnelle">
+  <main class="pt-32 pb-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-12">
+        <a href="/" class="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors mb-6 group">
+          <ArrowLeft class="mr-2 w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+          Retour à l'accueil
+        </a>
+        <h1 class="text-4xl font-bold text-slate-900 mb-4">Blog & Actualités</h1>
+        <p class="text-slate-600 max-w-2xl">
+          Découvrez nos articles sur la médiation professionnelle, la gestion des conflits et l'amélioration du climat social.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {BLOG_POSTS.map((post) => (
+          <a href={`/blog/${post.id}`} class="group">
+            <article class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all h-full flex flex-col">
+              <div class="relative aspect-video">
+                <img 
+                  src={post.image} 
+                  alt={post.title} 
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  referrerPolicy="no-referrer"
+                />
+                <div class="absolute top-4 left-4">
+                  <span class="px-3 py-1 bg-white/90 backdrop-blur-sm text-blue-800 text-xs font-bold rounded-full">
+                    {post.category}
+                  </span>
+                </div>
+              </div>
+              <div class="p-6 flex-grow flex flex-col">
+                <div class="flex items-center text-slate-400 text-sm gap-2 mb-3">
+                  <Calendar size={14} />
+                  <span>{post.date}</span>
+                </div>
+                <h2 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-700 transition-colors line-clamp-2">
+                  {post.title}
+                </h2>
+                <p class="text-slate-600 text-sm line-clamp-3 mb-6">
+                  {post.excerpt}
+                </p>
+                <div class="mt-auto">
+                  <span class="text-blue-600 font-semibold text-sm inline-flex items-center">
+                    Lire la suite
+                  </span>
+                </div>
+              </div>
+            </article>
+          </a>
+        ))}
+      </div>
+    </div>
+  </main>
+</Layout>
