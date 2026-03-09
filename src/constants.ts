@@ -40,10 +40,10 @@ export const SERVICES: ServiceItem[] = [
     id: 'ent-1',
     category: 'entreprise',
     title: 'Qualité Relationnelle & RSE',
-    description: 'Accompagner les entreprises dans la mise en place de mécanismes en qualité relationnelle en lien avec leur RSE sur 3 volets de prévention :',
+    description: 'Accompagner les entreprises dans l’anticipation et la mise en place de mécanismes en qualité relationnelle, sur 3 volets de prévention :',
     subItems: [
-      'Primaire : promotion de la qualité relationnelle auprès des équipes',
-      'Secondaire : anticipation de terrain pour suivre et guider les personnes',
+      'Primaire : promotion de la qualité relationnelle et formation des équipes',
+      'Secondaire : anticipation et accompagnement de terrain pour guider les personnes',
       'Tertiaire : neutralisation du conflit (restauration de la relation)'
     ],
     icon: Building2,
@@ -51,8 +51,8 @@ export const SERVICES: ServiceItem[] = [
   {
     id: 'ent-2',
     category: 'entreprise',
-    title: 'Médiation Intra-entreprise',
-    description: 'Accompagner la résolution de conflits entre collaborateurs ou entre direction et salariés. Rétablir le dialogue afin d’éviter le recours à la voie judiciaire.',
+    title: 'Médiation & Coaching',
+    description: 'Intervenir en amont pour prévenir les blocages, former vos collaborateurs à la qualité relationnelle ou accompagner la résolution de conflits.',
     icon: Handshake,
   },
 ];
