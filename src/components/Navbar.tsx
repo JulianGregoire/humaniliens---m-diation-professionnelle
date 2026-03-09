@@ -3,17 +3,8 @@ import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { NAV_LINKS } from '../constants.ts';
 
-// Create a small React Logo component for the Navbar
 const ReactLogo = () => (
-    <div className="flex items-center gap-2 select-none">
-        <div className="relative flex items-center">
-            <svg viewBox="0 0 24 24" className="w-8 h-8 text-sky-300 fill-sky-300 transform -scale-x-100" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-11.4 8.28 8.28 0 0 1 1.4.1 8 8 0 0 1 7.1 7.5z"></path></svg>
-            <svg viewBox="0 0 24 24" className="w-8 h-8 text-blue-800 fill-blue-800 -ml-4 mt-2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-11.4 8.28 8.28 0 0 1 1.4.1 8 8 0 0 1 7.1 7.5z"></path></svg>
-        </div>
-        <span className="text-2xl font-bold text-blue-500 tracking-tight">
-            Humani<span className="text-blue-800">Liens</span>
-        </span>
-    </div>
+    <img src="/logo.svg" alt="HumaniLiens" className="h-10 md:h-12 w-auto object-contain" />
 );
 
 export const Navbar = () => {
