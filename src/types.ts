@@ -3,6 +3,8 @@ export interface ServiceItem {
     title: string;
     description: string;
     icon: any;
+    category: 'particulier' | 'entreprise';
+    subItems?: string[];
 }
 
 export interface CaseStudy {

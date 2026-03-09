@@ -13,29 +13,47 @@ export const NAV_LINKS: NavLink[] = [
 ];
 
 export const SERVICES: ServiceItem[] = [
+  // Aux particuliers
   {
-    id: 'intra',
-    title: 'Médiation Intra-entreprise',
-    description: 'Résolution de conflits entre collaborateurs, ou entre direction et salariés. Rétablir le dialogue pour éviter les contentieux prud\'homaux.',
-    icon: Building2,
+    id: 'perso-1',
+    category: 'particulier',
+    title: 'Clarification & Blocages',
+    description: 'Accompagner une personne à structurer sa réflexion, clarifier ses choix professionnels ou personnels et dépasser ses blocages cognitifs.',
+    icon: Globe2,
   },
   {
-    id: 'inter',
-    title: 'Médiation Inter-entreprises',
-    description: 'Dénouement de blocages contractuels entre clients et fournisseurs ou partenaires commerciaux.',
+    id: 'perso-2',
+    category: 'particulier',
+    title: 'Communication SIC®',
+    description: 'Aider une personne à identifier ses interactions en communication et à diversifier ses modes de communication en tant que Consultante SIC® habilitée.',
     icon: Handshake,
   },
   {
-    id: 'prevention',
-    title: 'Prévention & Audit',
-    description: 'Analyse du climat social et mise en place d\'outils de communication pour prévenir les risques psychosociaux (RPS).',
+    id: 'perso-3',
+    category: 'particulier',
+    title: 'Résolution de Conflit',
+    description: 'Accompagner par le dispositif de médiation deux personnes dans la résolution de leur conflit.',
     icon: Scale,
   },
+  // Aux entreprises
   {
-    id: 'remote',
-    title: 'Médiation à Distance',
-    description: 'Intervention flexible pour les entreprises en Métropole et dans les DOM/TOM grâce à des outils de visioconférence sécurisés.',
-    icon: Globe2,
+    id: 'ent-1',
+    category: 'entreprise',
+    title: 'Qualité Relationnelle & RSE',
+    description: 'Accompagner les entreprises dans la mise en place de mécanismes en qualité relationnelle en lien avec leur RSE sur 3 volets de prévention :',
+    subItems: [
+      'Primaire : promotion de la qualité relationnelle auprès des équipes',
+      'Secondaire : anticipation de terrain pour suivre et guider les personnes',
+      'Tertiaire : neutralisation du conflit (restauration de la relation)'
+    ],
+    icon: Building2,
+  },
+  {
+    id: 'ent-2',
+    category: 'entreprise',
+    title: 'Médiation Intra-entreprise',
+    description: 'Accompagner la résolution de conflits entre collaborateurs ou entre direction et salariés. Rétablir le dialogue afin d’éviter le recours à la voie judiciaire.',
+    icon: Handshake,
   },
 ];
 
