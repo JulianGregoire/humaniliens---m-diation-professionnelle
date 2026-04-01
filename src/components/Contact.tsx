@@ -53,7 +53,7 @@ export const Contact = () => {
                                 <div>
                                     <h3 className="font-semibold text-lg">Localisation</h3>
                                     <p className="text-blue-200">Siège : Paris, France</p>
-                                    <p className="text-xs text-blue-400 mt-1">Intervention : France entière & DOM/TOM (Visioconférence)</p>
+                                    <p className="text-[10px] text-blue-400 mt-1 italic uppercase leading-snug">Intervention possible en distanciel avec ? À statuer ultérieurement</p>
                                 </div>
                             </div>
                         </div>
