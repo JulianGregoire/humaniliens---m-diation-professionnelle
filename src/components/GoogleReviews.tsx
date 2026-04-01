@@ -211,7 +211,7 @@ export const GoogleReviews = () => {
 
                 <div className="mt-12 text-center">
                     <a
-                        href="https://www.google.com/search?q=Marie-Andrée+Fontaine+Médiation"
+                        href="https://www.google.com/search?q=Marie-Andrée+SAUVEUR-FONTAIN+Médiation"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center text-blue-600 font-semibold hover:underline"
