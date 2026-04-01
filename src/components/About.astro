@@ -37,33 +37,43 @@ import { GraduationCap, MapPin, Handshake } from 'lucide-react';
           </p>
 
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-4">
-            <div class="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-slate-100">
-              <div class="p-2 bg-blue-100 rounded-lg text-blue-700">
+            <a 
+              href="https://www.epmn.fr/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow group"
+            >
+              <div class="p-2 bg-blue-100 rounded-lg text-blue-700 group-hover:bg-blue-600 group-hover:text-white transition-colors">
                 <GraduationCap size={20} />
               </div>
               <div>
-                <p class="font-semibold text-slate-900">Certifiée EPMN</p>
-                <p class="text-[10px] text-slate-500 leading-tight">Ecole prof. de la médiation et de la négociation de Bordeaux</p>
+                <p class="font-semibold text-slate-900 leading-tight">Certifiée EPMN</p>
+                <p class="text-[10px] text-slate-500 leading-tight mt-1">Ecole prof. de la médiation et de la négociation de Bordeaux</p>
               </div>
-            </div>
-            <div class="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-slate-100">
-              <div class="p-2 bg-blue-100 rounded-lg text-blue-700">
+            </a>
+            <a 
+              href="https://www.cpmn.info/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow group"
+            >
+              <div class="p-2 bg-blue-100 rounded-lg text-blue-700 group-hover:bg-blue-600 group-hover:text-white transition-colors">
                 <Handshake size={20} />
               </div>
               <div class="flex-grow">
-                <p class="font-semibold text-slate-900 text-sm">Adhérente CPMN</p>
-                <a href="https://www.cpmn.info/" target="_blank" rel="noopener noreferrer" class="text-[10px] text-blue-500 hover:underline leading-tight">
+                <p class="font-semibold text-slate-900 text-sm leading-tight">Adhérente CPMN</p>
+                <p class="text-[10px] text-slate-500 leading-tight mt-1">
                   Chambre Pro. de la Médiation et de la Négociation
-                </a>
+                </p>
               </div>
-            </div>
+            </a>
             <div class="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm border border-slate-100 lg:col-span-1 md:col-span-2 lg:col-start-auto md:justify-center lg:justify-start">
               <div class="p-2 bg-blue-100 rounded-lg text-blue-700">
                 <MapPin size={20} />
               </div>
               <div>
-                <p class="font-semibold text-slate-900">Intervention</p>
-                <p class="text-xs text-slate-500">France & DOM/TOM</p>
+                <p class="font-semibold text-slate-900 leading-tight">Intervention</p>
+                <p class="text-xs text-slate-500 mt-1">France & DOM/TOM</p>
               </div>
             </div>
           </div>
