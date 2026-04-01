@@ -1,0 +1,51 @@
+---
+import { MessageSquare, ArrowRight } from 'lucide-react';
+---
+
+<section class="py-20 relative overflow-hidden">
+  {/* Modern Gradient Background */}
+  <div class="absolute inset-0 bg-blue-800"></div>
+  <div class="absolute inset-0 bg-gradient-to-br from-blue-900 via-blue-800 to-sky-700 opacity-90"></div>
+  
+  {/* Abstract Decorations */}
+  <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-sky-400/10 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-8 md:p-16 text-center shadow-2xl">
+      <div class="inline-flex items-center justify-center p-3 bg-white/20 rounded-2xl mb-8">
+        <MessageSquare class="text-white w-8 h-8" />
+      </div>
+      
+      <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+        Prêt à restaurer la qualité <br class="hidden md:block" /> relationnelle au sein de votre équipe ?
+      </h2>
+      
+      <p class="text-xl text-blue-100 max-w-2xl mx-auto mb-10 leading-relaxed">
+        Médiatrice professionnelle certifiée, je vous accompagne avec neutralité et impartialité pour dénouer vos situations de blocage.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a 
+          href="#contact" 
+          class="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-800 font-bold rounded-xl hover:bg-blue-50 transition-all shadow-lg hover:shadow-white/20 group"
+        >
+          Prendre contact maintenant
+          <ArrowRight class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+        </a>
+        <a 
+          href="tel:0662327638" 
+          class="inline-flex items-center justify-center px-8 py-4 bg-transparent text-white border-2 border-white/30 font-bold rounded-xl hover:bg-white/10 transition-all"
+        >
+          Appeler le 06 62 32 76 38
+        </a>
+      </div>
+      
+      <p class="mt-8 text-sm text-blue-200/80 italic">
+        * Premier échange de 30 minutes offert et sans engagement.
+      </p>
+    </div>
+  </div>
+</section>
